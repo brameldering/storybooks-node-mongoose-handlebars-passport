@@ -23,6 +23,7 @@ mongoose
   .catch((err) => logger.error(err));
 
 app.get("/", (req, res) => {
+  logger.info("Get/ received");
   res.send("It Works");
 });
 
